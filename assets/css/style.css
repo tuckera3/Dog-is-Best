@@ -52,8 +52,8 @@ div .title {
 
 p {
     text-align: center; 
+    padding: 10px; 
 }
-
 
 /* photo grid */
 .parent { 
@@ -110,6 +110,7 @@ p {
     opacity: 0;
     text-align: center; 
     transition: opacity .5s; 
+    padding: 5px; 
 }
 
 
@@ -134,7 +135,13 @@ div.active {
 }
 
 /* Hypoallergenic */
-
+div.hypoallergenic {
+    background-image: url("../images/hypoallergenictop.jpg");
+    background-image: fixed;
+    min-height: 800px;
+    background-size: cover;
+    background-position: center;
+}
 /* Companion */
 div.companion {
     background-image: url("../images/companiontop.jpg");
@@ -144,14 +151,26 @@ div.companion {
     background-position: center;
 }
 /* Adaptable */
-
+div.adaptable {
+    background-image: url("../images/adaptabletop.jpg");
+    background-image: fixed;
+    min-height: 800px;
+    background-size: cover;
+    background-position: center;
+}
 /* Independent */
-
+div.independent {
+    background-image: url("../images/independenttop.jpg");
+    background-image: fixed;
+    min-height: 800px;
+    background-size: cover;
+    background-position: center;
+}
 /* general */
 #images1 {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 #images2 {
@@ -184,14 +203,21 @@ section img {
     object-fit: cover;
 }
 
-section h2 {
-    margin: 0px; 
+text h2 {
+    margin: 0px;
     text-align: center;
+    margin: 20px;  
 }
 
-section p {
+text p {
     margin: 0px; 
     text-align: center; 
+    margin: 20px; 
+    display: flex;
+    flex-wrap: wrap; 
+    padding-bottom: 80px;
+    padding-left: 100px; 
+    padding-right: 100px; 
 }
 
 /*footer*/
@@ -200,7 +226,7 @@ footer {
     padding: 80px;
     display: flex;
     justify-content: space-around;
-     
+    width: 88.8%; 
 }
 
 footer li {
