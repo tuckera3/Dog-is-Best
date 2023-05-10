@@ -29,7 +29,10 @@ menu li a {
     font-size: 20px;
     color: var(--lightpurple);
     background: var(--darkpurple);
-    padding: 20px; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    padding-right: 20px; 
+    padding-left: 20px; 
 
 }
 
@@ -37,6 +40,43 @@ menu li {
     list-style: none;
     float: left;
     margin-top: 20px;
+}
+
+menu li a:hover {
+    color:white; 
+}
+
+menu button {
+    font-family: 'Capriola', sans-serif;
+    font-size: 20px;
+    color: var(--darkpurple);
+    background: white;
+    float: right; 
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px; 
+    margin-right: 30px;  
+    margin-top: 10px; 
+}
+
+menu button:hover {
+    color: var(--lightpurple); 
+}
+
+menu input {
+    padding: 5px; 
+    margin-top: 20px; 
+}
+
+#input {
+    display: none; 
+    float: right; 
+}
+
+/*hidden*/
+#mobile-menu-button {
+    display: none;
 }
 
 /*header*/
@@ -51,6 +91,8 @@ div .title {
 }
 
 p {
+    font-family: 'open sans', sans-serif; 
+    text-decoration:double;
     text-align: center; 
     padding: 10px; 
 }
@@ -144,7 +186,7 @@ div.hypoallergenic {
 }
 /* Companion */
 div.companion {
-    background-image: url("../images/companiontop.jpg");
+    background-image: url("../images/companiontop\ 2.jpg");
     background-image: fixed;
     min-height: 800px;
     background-size: cover;
@@ -167,6 +209,11 @@ div.independent {
     background-position: center;
 }
 /* general */
+
+section img {
+    margin: 0 20px;
+}
+
 #images1 {
     display: flex;
     justify-content: center;
@@ -203,23 +250,105 @@ section img {
     object-fit: cover;
 }
 
-text h2 {
-    margin: 0px;
-    text-align: center;
-    margin: 20px;  
-}
-
-text p {
+.text {
     margin: 0px; 
     text-align: center; 
     margin: 20px; 
-    display: flex;
-    flex-wrap: wrap; 
     padding-bottom: 80px;
     padding-left: 100px; 
     padding-right: 100px; 
 }
 
+.text h2 {
+    padding-bottom: 0px; 
+}
+
+@media (max-width: 1340px) {
+    #images1 {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: left; 
+        }
+    }
+
+@media (max-width: 1340px) {
+    #images2 {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: left; 
+        }
+    }
+@media (max-width: 1340px) {
+        #images3 {
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            justify-content: left; 
+            }
+        }
+@media (max-width: 1340px) {
+            #images4 {
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                justify-content: left; 
+                }
+            }
+@media (max-width: 1340px) {
+                #images5 {
+                    flex-wrap: nowrap;
+                    overflow-x: auto;
+                    justify-content: left; 
+                    }
+                }
+                
+
+/*dog list page*/
+div.doglist {
+    background-image: url("../images/DogListTop.jpeg");
+    background-image: fixed;
+    max-height: 550px;
+    background-size: cover;
+    background-position: center;
+}
+
+div .doglisttitle {
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    bottom: 20%;
+    right: 30%;
+    left: 30%;
+    font-size: 100px;
+}
+
+ul {
+    list-style: none;
+}
+
+li a{
+    text-decoration: none; 
+    color: var(--darkpurple);
+}
+
+span {
+    font-size: 12px; 
+    font-family: 'open sans', sans-serif; 
+    padding-bottom: 20px;
+}
+.container {
+    display: flex; 
+    
+}
+.column {
+    width: 50%; 
+    padding: 20px; 
+    margin-left: 50px;
+}
+
+.column2 {
+    width: 50%; 
+    padding: 20px; 
+    margin-left: 200px; 
+}
 /*footer*/
 footer {
     background-color: var(--darkpurple);
@@ -247,4 +376,9 @@ footer li a {
 .footer2 {
     text-align: right;
 }
+
+footer div li a:hover{
+    color: white; 
+}
+
 
