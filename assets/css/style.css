@@ -82,7 +82,7 @@ menu input {
 /*header*/
 div .title {
     position: absolute;
-    text-align: center;
+    text-align: center; 
     top: 50%;
     bottom: 50%;
     right: 30%;
@@ -445,5 +445,12 @@ footer div li a:hover{
   @media screen and (max-width:800px) {
     .container {
         display: block;
+    }
+  }
+
+
+  @media screen and (max-width: 800px) {
+    footer li a {
+        font-size: 12px; 
     }
   }
